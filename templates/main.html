@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+    <section id="main-body">
+        <h1 id="take">Take The Quiz To Find Out!</h1>
+        <a href="{{ url_for('question_base') }}"><button id="start">START</button></a>
+    </section>
+
+{% endblock %}

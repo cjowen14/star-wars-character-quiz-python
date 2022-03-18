@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Question {{number + 1}}
+{% endblock %}
+
+{% block content %}
+
+    <form method="POST">
+        <section class="quiz-card">
+            <h1 id="question-heading">{{ questions[number].title }}</h1>
+            <div class="answer-box">
+                <img src="../{{ questions[number].image1 }}" class ="answer-pic" id="answer1">
+                <h2 class="answer-text">{{ questions[number].answer1 }}</h2>
+                <input type="radio" name="answer" value="{{ questions[number].answer1 }}" class="radio">
+            </div>
+            <div class="answer-box">
+                <img src="../{{ questions[number].image2 }}" class ="answer-pic" id="answer2">
+                <h2 class="answer-text">{{ questions[number].answer2 }}</h2>
+                <input type="radio" name="answer" value="{{ questions[number].answer2 }}" class="radio">
+            </div>
+            <div class="answer-box">
+                <img src="../{{ questions[number].image3 }}" class ="answer-pic" id="answer3">
+                <h2 class="answer-text">{{ questions[number].answer3 }}</h2>
+                <input type="radio" name="answer" value="{{ questions[number].answer3 }}" class="radio">
+            </div>
+            <div class="answer-box">
+                <img src="../{{ questions[number].image4 }}" class ="answer-pic" id="answer4">
+                <h2 class="answer-text">{{ questions[number].answer4 }}</h2>
+                <input type="radio" name="answer" value="{{ questions[number].answer4 }}" class="radio">
+            </div>
+            <br>
+            <button id="next" type="submit">NEXT</button>
+        </section>
+    </form>
+
+
+{% endblock %}
+
+

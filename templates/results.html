@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Results
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <h1 id="results-heading">You are {{ character.name }}!!</h1>
+        <div id="results">
+            <img src="{{ character.image }}" id="results-pic">
+            <p id="results-info">{{ character.result }}</p>
+        </div>
+    </section>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Questions List
+{% endblock %}
+
+
+{% block content %}
+
+    <h2 id="list-header">Questions List!</h2>
+    <section class="question-section">
+        {% for i in questions %}
+            <h2 id="ques">{{ i.title }}</h2>
+            <ul>
+                <li class="list-answer">{{ i.answer1 }}</li>
+                <li class="list-answer">{{ i.answer2 }}</li>
+                <li class="list-answer">{{ i.answer3 }}</li>
+                <li class="list-answer">{{ i.answer4 }}</li>
+            </ul> 
+        {% endfor %}
+        
+        </div>
+    </section>
+
+
+
+{% endblock %}
+

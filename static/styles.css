@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(New-Stars.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HEADER AND NAVIGATION FOR ALL PAGES */
+header{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+header nav{
+    display: flex;
+    margin-top: 0px;
+    align-items: baseline;
+}
+
+header nav h3 {
+    font-size: 25px;
+    margin: 25px;
+    color: #fce027ff;
+    display: inline;
+}
+
+#title{
+    margin-right: 200px;
+    font-size: 60px;
+    color: #fce027ff;
+}
+
+#title a{
+    color: #fce027ff;
+}
+
+#logo{
+    width: 200px;
+    height: 95px;
+}
+
+#questions-list:hover,#title:hover,#logo:hover,#your-characters:hover,#chars:hover{
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+}
+
+
+
+/* HOME PAGE */
+#main-body{
+    text-align: center;
+    margin-top: 250px;
+}
+
+#take{
+    color: white;
+    font-size: 100px;
+}
+
+#start{
+    margin-top: 20px;
+    background-image: none;
+    background-color: #fce027ff;
+    width: 250px;
+    height: 75px;
+    font-size: 50px;
+    color: black;
+}
+
+/* Characters List */
+#roster-header{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+#roster{
+    display: inline;
+}
+
+.roster-name{
+    color: #fce027ff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.character{
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+
+.char-pic{
+    width: 175px;
+    height: 150px;
+}
+
+.char-pic:hover{
+    cursor: pointer;
+}
+
+/* CHARACTER ROSTER */
+#roster-header{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+#roster{
+    display: inline;
+}
+
+.roster-name{
+    color: #fce027ff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.character{
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+
+.char-pic{
+    width: 200px;
+    height: 175px;
+}
+
+.char-pic:hover{
+    cursor: pointer;
+}
+
+#roster-header{
+    color: white;
+    font-size: 50px;
+    margin-top: 85px;
+}
+
+#roster{
+    display: inline;
+}
+
+.roster-name{
+    color: #fce027ff;
+}
+
+.character{
+    display: inline-block;
+    width: 350px;
+    height: 100px;
+    margin-top: 35px;
+}
+
+.char-pic{
+    width: 350px;
+    height: 225px;
+}
+
+.char-pic:hover{
+    cursor: pointer;
+}
+
+/* QUIZ CARDS */
+.quiz-card{
+    color: white;
+    margin-top: 75px;
+    margin-left: 250px;
+}
+
+.pic{
+    width: 150px;
+    height: 150px;
+}
+
+#question-heading{
+    font-size: 67px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.answer-box{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-color: green;
+    margin: 50px;
+
+}
+
+.answer-pic{
+    width: 100%;
+    height: 100%;
+}
+
+#next,#final{
+    /* background-image: url(../images/New-Stars.jpg); */
+    color: white;
+    width: 100px;
+    font-size: 40px;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.answer-text{
+    text-align: center;
+    color: #fce027ff;
+    font-size: 30px;
+}
+
+
+/* QUESTIONS LIST */
+.question-section{
+    color: white;
+    display: inline-block;
+    background-image: none;
+} 
+
+#ques{
+    font-size: 35px;
+    color: #fce027ff;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    background-image: none;
+    
+}
+
+#list-header{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    background-image: none;
+}
+
+.list-answer{
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 8px;
+    background-image: none;
+}
+
+.selected{
+    border: rgb(16, 196, 16) 5px solid;
+    width: 95%;
+    height: 95%;
+}
+
+/* Results */
+#results{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#results-pic{
+    height: 40vh;
+    width: 34vw;
+    margin-left: 2vw;
+    margin-top: 6vh;
+}
+
+#results-heading{
+    color: white;
+    text-align: center;
+    font-size: 7vh;
+    margin-bottom: 1vh;
+}
+
+#results-info{
+    display: inline-block;
+    color: #fce027ff;
+    width: 40vw;
+    font-size: 1.9vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.construction{
+    text-align: center;
+    margin-top: 350px;
+    font-size: 80pt;
+}
+
+.radio{
+    width: 100%;
+    height: 2em;
+    margin-top: 10px;
+}
