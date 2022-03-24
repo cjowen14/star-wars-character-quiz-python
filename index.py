@@ -380,7 +380,7 @@ def results():
     global counter_dict
     ## ADD COUNTS TO A DICTIONARY
     counter_dict['Yoda'] = yodaCount
-    counter_dict['Obi Wan Kenobi'] = kenobiCount
+    counter_dict['Obi-Wan Kenobi'] = kenobiCount
     counter_dict['Darth Vader'] = vaderCount
     counter_dict['Rey Skywalker'] = reyCount
     counter_dict['Ahsoka Tano'] = ahsokaCount
@@ -390,7 +390,7 @@ def results():
     counter_dict['The Mandalorian'] = mandoCount
     counter_dict['Boba Fett'] = bobaCount
     counter_dict['Padme Amidala'] = padmeCount
-    counter_dict['Jar Jar Bink'] = jarCount
+    counter_dict['Jar Jar Binks'] = jarCount
 
     ## FIND HIGHEST COUNT IN DICTIONARY
     c = max(counter_dict, key= lambda x: counter_dict[x])
@@ -398,11 +398,15 @@ def results():
     ## GET CHARACTER OBJECTS
     obj_list = get_characters()
 
+    print(counter_dict)
+    print("Answer is: " + c)
+
     ## GET CHARACTER THAT MATCHES THE ONE WITH THE HIGHEST COUNT
     for obj in obj_list:
+        print(obj.name)
         if obj.name == c:
-            character = obj
-    return render_template('results.html', character=character)
+            return render_template('results.html', character=obj)
+    
 
 
 
