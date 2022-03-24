@@ -178,7 +178,6 @@ def list_questions():
 def question_base():
     global question
     question += 1
-    print(question)
     obj_list = get_questions()
     return render_template('question_base.html', questions=obj_list, number=question)
 

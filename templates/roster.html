@@ -8,13 +8,15 @@ Character Roster
 {% block content %}
 
 <h2 id="roster-header">Character Roster!</h2>
+{% for i in characters %}
 <section id="roster">
-    {% for i in characters %}
+    
     <div class="character">
-        <img class="char-pic" src="{{i.image}}">
+        <img class="char-pic" src="{{i.image}}" alt="character-picture">
         <h2 class="roster-name">{{ i.name }}</h2>
     </div>
-    {% endfor %}
+    
 </section>
+{% endfor %}
 
 {% endblock %}

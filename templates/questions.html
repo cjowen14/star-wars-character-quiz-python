@@ -8,19 +8,20 @@ Questions List
 {% block content %}
 
     <h2 id="list-header">Questions List!</h2>
-    <section class="question-section">
+    <div class="questions-div">
         {% for i in questions %}
-            <h2 id="ques">{{ i.question }}</h2>
-            <ul>
-                <li class="list-answer">{{ i.answer1 }}</li>
-                <li class="list-answer">{{ i.answer2 }}</li>
-                <li class="list-answer">{{ i.answer3 }}</li>
-                <li class="list-answer">{{ i.answer4 }}</li>
-            </ul> 
+            <section class="question-section">
+                <h2 id="ques">{{ i.question }}</h2>
+                <ul>
+                    <li class="list-answer">{{ i.answer1 }}</li>
+                    <li class="list-answer">{{ i.answer2 }}</li>
+                    <li class="list-answer">{{ i.answer3 }}</li>
+                    <li class="list-answer">{{ i.answer4 }}</li>
+                </ul> 
+            </section>
         {% endfor %}
-        
-        </div>
-    </section>
+    </div>
+    
 
 
 
