@@ -408,7 +408,6 @@ def yours():
 
 if __name__ == '__main__':
     app.run()
-    print(app.secret_key)
 
 
 
