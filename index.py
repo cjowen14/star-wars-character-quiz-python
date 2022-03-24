@@ -1,16 +1,17 @@
 from flask import Flask, render_template, request, flash, session, url_for, redirect
 import json
+import os
 from jinja2 import StrictUndefined
 from flask_sqlalchemy import SQLAlchemy
-import password
 from sqlalchemy import create_engine
 
+
 app = Flask(__name__)
-app.secret_key = "SECRET"
+app.secret_key = os.getenv('SECRET_KEY')
 app.jinja_env.undefined = StrictUndefined
 db = SQLAlchemy()
 
-app.config['SQLALCHEMY_DATABASE_URI'] = password.uri
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.app = app
 db.init_app(app)
@@ -407,6 +408,7 @@ def yours():
 
 if __name__ == '__main__':
     app.run()
+    print(app.secret_key)
 
 
 
