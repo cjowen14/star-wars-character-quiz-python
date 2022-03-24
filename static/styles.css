@@ -103,18 +103,18 @@ h3 a{
 
 #roster{
     text-align: center;
+    display: inline-block;
+    margin: 8px;
 }
 
 .roster-name{
     color: #fce027ff;
-    text-align: center;
     font-size: 16px;
 }
 
 .character{
     display: inline-block;
-    margin: 4px;
-    margin-bottom: 15px;
+
 }
 
 .char-pic{
@@ -408,8 +408,7 @@ h3 a{
 
 .character{
     display: inline-block;
-    justify-content: space-between;
-    margin-left: 15px;
+    margin-left: 35px;
     margin-bottom: 30px;
     margin-right: 15px;
 }
@@ -683,6 +682,10 @@ header nav h3 {
     margin-top: 85px;
 }
 
+#roster{
+    text-align: center;
+}
+
 
 .roster-name{
     color: #fce027ff;
@@ -694,7 +697,6 @@ header nav h3 {
     width: 350px;
     height: 100px;
     margin-top: 45px;
-    margin-right: 60px;
 }
 
 .char-pic{
