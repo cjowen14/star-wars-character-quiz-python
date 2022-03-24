@@ -39,7 +39,7 @@ counter_dict = {}
 class Character(db.Model):
     __tablename__ = "characters"
 
-    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    char_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     name = db.Column(db.String(100))
     planet = db.Column(db.String(100))
     hair = db.Column(db.String(100))
@@ -59,8 +59,8 @@ class Character(db.Model):
 class Question(db.Model):
     __tablename__ = "questions"
 
-    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    title = db.Column(db.String(100))
+    question_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    question = db.Column(db.String(100))
     answer1 = db.Column(db.String(100))
     answer2 = db.Column(db.String(100))
     answer3 = db.Column(db.String(100))
@@ -71,7 +71,7 @@ class Question(db.Model):
     image4 = db.Column(db.String(100))
 
     def __repr__(self):
-        return f"{self.title}"
+        return f"{self.question}"
 
 
 ## GET ALL CHARACTERS FROM DATABASE
