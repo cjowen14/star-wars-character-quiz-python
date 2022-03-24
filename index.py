@@ -192,110 +192,109 @@ def answer():
         return redirect(url_for('results'))
 
     ## QUESTION 1
-    elif question + 1 == 1 and answer == 'Coruscant':
+    elif question + 1 == 1 and answer == 'Rock':
+        boba_plus()
+        vader_plus()
+        kylo_plus()
+    elif question + 1 == 1 and answer == 'Pop':
+        jar_plus()
+        rey_plus()
+        maul_plus()
+        ahsoka_plus()
+    elif question + 1 == 1 and answer == 'Country':
+        yoda_plus()
+        han_plus()
+        mando_plus()
+    elif question + 1 == 1 and answer == 'Indie':
+        kenobi_plus()
+        padme_plus()
+    ## QUESTION 2
+    elif question + 1 == 2 and answer == 'Coruscant':
         vader_plus()
         ahsoka_plus()
         maul_plus()
-    elif question + 1 == 1 and answer == 'Naboo':
+    elif question + 1 == 2 and answer == 'Naboo':
         kenobi_plus()
         jar_plus()
         kylo_plus()
         padme_plus()    
-    elif question + 1 == 1 and answer == 'Kashyyyk':
+    elif question + 1 == 2 and answer == 'Kashyyyk':
         rey_plus()
         boba_plus()
         mando_plus()
-    elif question + 1 == 1 and answer == 'Takodana':
+    elif question + 1 == 2 and answer == 'Takodana':
         boba_plus()
         rey_plus()
         han_plus()
-    ## QUESTION 2
-    elif question + 1 == 2 and answer == 'Bravery':
-        kenobi_plus()
-        rey_plus()
-        han_plus()
-    elif question + 1 == 2 and answer == 'Friendship':
-        yoda_plus()
-        rey_plus()
-        jar_plus()
-        padme_plus()
-    elif question + 1 == 2 and answer == 'Power':
-        vader_plus()
-        boba_plus()
-        maul_plus()
-        kylo_plus()
-    elif question + 1 == 2 and answer == 'Loytalty':
-        jar_plus()
-        ahsoka_plus()
-        mando_plus()
     ## QUESTON 3
-    elif question + 1 == 3 and answer == 'Blue':
-        kenobi_plus()
+    elif question + 1 == 3 and answer == 'Doctor':
         yoda_plus()
         padme_plus()
-    elif question + 1 == 3 and answer == 'Red':
-        vader_plus()
-        kylo_plus()
-    elif question + 1 == 3 and answer == 'Purple':
+    elif question + 1 == 3 and answer == 'Mechanic':
         boba_plus()
         mando_plus()
+        ahsoka_plus()
         maul_plus()
-    elif question + 1 == 3 and answer == 'Yellow':
-        jar_plus()
+    elif question + 1 == 3 and answer == 'Air Traffic Controller':
+        vader_plus()
         rey_plus()
-        ahsoka_plus()
         han_plus()
-    ## QUESTION 4
-    elif question + 1 == 4 and answer == 'R2-D2':
+    elif question + 1 == 3 and answer == 'Salesman':
         kenobi_plus()
-        yoda_plus()
-        ahsoka_plus()
-    elif question + 1 == 4 and answer == 'BB-8':
-        rey_plus()
         jar_plus()
         kylo_plus()
+    ## QUESTION 4
+    elif question + 1 == 4 and answer == 'Bravery':
+        kenobi_plus()
+        rey_plus()
+        han_plus()
+    elif question + 1 == 4 and answer == 'Friendship':
+        yoda_plus()
+        rey_plus()
+        jar_plus()
         padme_plus()
-    elif question + 1 == 4 and answer == 'C-3PO':
+    elif question + 1 == 4 and answer == 'Power':
         vader_plus()
         boba_plus()
-        han_plus()
-    elif question + 1 == 4 and answer == 'BD-1':
-        rey_plus()
         maul_plus()
+        kylo_plus()
+    elif question + 1 == 4 and answer == 'Loytalty':
+        jar_plus()
+        ahsoka_plus()
         mando_plus()
     ## QUESTION 5
-    elif question + 1 == 5 and answer == 'Doctor':
-        yoda_plus()
-        padme_plus()
-    elif question + 1 == 5 and answer == 'Mechanic':
-        boba_plus()
-        mando_plus()
-        ahsoka_plus()
-        maul_plus()
-    elif question + 1 == 5 and answer == 'Air Traffic Controller':
+    elif question + 1 == 5 and answer == 'Steak':
         vader_plus()
+        kenobi_plus()
+        mando_plus()
+    elif question + 1 == 5 and answer == 'Pasta':
+        boba_plus()
+        yoda_plus()
+        ahsoka_plus()
+    elif question + 1 == 5 and answer == 'Enchiladas':
         rey_plus()
+        maul_plus()
+        padme_plus()
+    elif question + 1 == 5 and answer == 'Orange Chicken':
+        jar_plus()
+        kylo_plus()
         han_plus()
-    elif question + 1 == 5 and answer == 'Salesman':
-        kenobi_plus()
-        jar_plus()
-        kylo_plus()
     ## QUESTION 6
-    elif question + 1 == 6 and answer == 'Steak':
-        vader_plus()
+    elif question + 1 == 6 and answer == 'Blue':
         kenobi_plus()
-        mando_plus()
-    elif question + 1 == 6 and answer == 'Pasta':
-        boba_plus()
         yoda_plus()
-        ahsoka_plus()
-    elif question + 1 == 6 and answer == 'Enchiladas':
-        rey_plus()
-        maul_plus()
         padme_plus()
-    elif question + 1 == 6 and answer == 'Orange Chicken':
-        jar_plus()
+    elif question + 1 == 6 and answer == 'Red':
+        vader_plus()
         kylo_plus()
+    elif question + 1 == 6 and answer == 'Purple':
+        boba_plus()
+        mando_plus()
+        maul_plus()
+    elif question + 1 == 6 and answer == 'Yellow':
+        jar_plus()
+        rey_plus()
+        ahsoka_plus()
         han_plus()
     ## QUESTION 7
     elif question + 1 == 7 and answer == 'Anger':
@@ -315,56 +314,57 @@ def answer():
         yoda_plus()
         padme_plus()
     ## QUESTION 8
-    elif question + 1 == 8 and answer == 'Spring':
-        yoda_plus()
-        padme_plus()
-        mando_plus()
-    elif question + 1 == 8 and answer == 'Summer':
-        jar_plus()
-        maul_plus()
-        kylo_plus()
-    elif question + 1 == 8 and answer == 'Fall':
-        rey_plus()
+    elif question + 1 == 8 and answer == 'R2-D2':
         kenobi_plus()
+        yoda_plus()
         ahsoka_plus()
-        han_plus()
-    elif question + 1 == 8 and answer == 'Winter':
+    elif question + 1 == 8 and answer == 'BB-8':
+        rey_plus()
+        jar_plus()
+        kylo_plus()
+        padme_plus()
+    elif question + 1 == 8 and answer == 'C-3PO':
         vader_plus()
         boba_plus()
+        han_plus()
+    elif question + 1 == 8 and answer == 'BD-1':
+        rey_plus()
+        maul_plus()
+        mando_plus()
     ## QUESTION 9
-    elif question + 1 == 9 and answer == 'Life of the Party':
+    elif question + 1 == 9 and answer == 'Spring':
+        yoda_plus()
+        padme_plus()
+        mando_plus()
+    elif question + 1 == 9 and answer == 'Summer':
         jar_plus()
         maul_plus()
-        han_plus()
-    elif question + 1 == 9 and answer == 'Talk to Friends':
+        kylo_plus()
+    elif question + 1 == 9 and answer == 'Fall':
         rey_plus()
         kenobi_plus()
         ahsoka_plus()
-        padme_plus()
-    elif question + 1 == 9 and answer == 'Brief Appearance':
-        boba_plus()
-        mando_plus()
-    elif question + 1 == 9 and answer == 'No Parties':
-        yoda_plus()
+        han_plus()
+    elif question + 1 == 9 and answer == 'Winter':
         vader_plus()
-        kylo_plus()
+        boba_plus()
     ## QUESTION 10
-    elif question + 1 == 10 and answer == 'Rock':
+    elif question + 1 == 10 and answer == 'Life of the Party':
+        jar_plus()
+        maul_plus()
+        han_plus()
+    elif question + 1 == 10 and answer == 'Talk to Friends':
+        rey_plus()
+        kenobi_plus()
+        ahsoka_plus()
+        padme_plus()
+    elif question + 1 == 10 and answer == 'Brief Appearance':
         boba_plus()
+        mando_plus()
+    elif question + 1 == 10 and answer == 'No Parties':
+        yoda_plus()
         vader_plus()
         kylo_plus()
-    elif question + 1 == 10 and answer == 'Pop':
-        jar_plus()
-        rey_plus()
-        maul_plus()
-        ahsoka_plus()
-    elif question + 1 == 10 and answer == 'Country':
-        yoda_plus()
-        han_plus()
-        mando_plus()
-    elif question + 1 == 10 and answer == 'Indie':
-        kenobi_plus()
-        padme_plus()
     return redirect(url_for('question_base'))
 
 
@@ -396,7 +396,7 @@ def results():
     for obj in obj_list:
         if obj.name == c:
             character = obj
-    yours(character)
+    # yours(character)
     return render_template('results.html', character=character)
 
 
